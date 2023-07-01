@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:oauth2
+    username: sa
+    password:
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  security:
+    oauth2:
+      client:
+        registration:
+          intra42:
+            client-id: {client-id}
+            client-secret: {client-secret}
+            redirect-uri: "{baseUrl}/login/oauth2/code/{registrationId}"
+            authorization-grant-type: authorization_code
+            client-name: intra42
+            scope:
+              - public
+        provider:
+            intra42:
+                authorization-uri: https://api.intra.42.fr/oauth/authorize
+                user-info-uri: https://api.intra.42.fr/v2/me
+                token-uri: https://api.intra.42.fr/oauth/token
+                user-name-attribute: id
+
+
+server:
+  servlet:
+    context-path: /api/v1

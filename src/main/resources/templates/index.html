@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <h1>
+        Welcome to Spring Boot + OAuth2.0
+    </h1>
+
+    <div th:if="${name != null}">
+        <p>
+            Logged in as: <span id="user" th:text="${name}"></span>
+        </p>
+        <p>
+            Email: <span id="email" th:text="${email}"></span>
+        </p>
+    </div>
+    <div th:if="${avatar != null}">
+        <p>
+            Your avatar:
+        </p>
+        <img th:src="${avatar}" alt="avatar"/>
+    </div>
+    <div th:if="${name == null}">
+        <p>
+            You don't have a intra avatar.
+        </p>
+    </div>
+</head>
+<body>
+
+</body>
+</html>
