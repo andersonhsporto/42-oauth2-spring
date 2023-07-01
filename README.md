@@ -3,8 +3,9 @@
 
 ## Description
 
-This project is for 42 OAuth in Spring Boot.
-this project is heavily in [Belnut](
+This project implements the OAuth2 authentication from the 42 platform in Spring Boot. Using technologies like Java, Spring Boot, and Spring Security, the project enables users to authenticate with their 42 credentials and access profile information. It provides an easy and secure way to integrate 42 authentication into Spring applications.
+<br>
+This project is heavily inspired in [Belnut](
 https://github.com/Belnut/42_springboot_login_example) implementation.
 
 ## Technologies
