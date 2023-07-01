@@ -51,7 +51,8 @@ you also can use `./mvnw spring-boot:run` to run the project.
 
 ## Example
 
-![Captura de tela_2023-07-01_00-19-31](https://github.com/andersonhsporto/42-oauth2-spring/assets/47704550/5f275c3a-601d-4ded-8810-53e35b6b97e4)
+
+![Captura de tela_2023-07-01_00-19-31](https://github.com/andersonhsporto/42-oauth2-spring/assets/47704550/6f4c9869-945a-4b9d-a76f-5794b1d99d52)
 
 
 
